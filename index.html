@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#134a42">
+  <meta name="description" content="Il piano settimanale, facile da consultare: ricette, alternative e lista della spesa, anche offline.">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Piatto Chiaro">
+  <meta name="color-scheme" content="light">
+
+
+
+<style>
+:root{font-family:ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;color:#1b3936;background:#f7f8f4;-webkit-font-smoothing:antialiased;--pine:#134a42;--pine2:#1c5b50;--sage:#e9f1e9;--sage2:#dfece4;--text:#1b3936;--muted:#687976;--line:#e0e6de;--gold:#eabe71;--white:#fff;--radius:20px}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-height:100vh;padding-bottom:calc(100px + env(safe-area-inset-bottom))}button,select,input{font:inherit}button{cursor:pointer}button:focus-visible,select:focus-visible,input:focus-visible,a:focus-visible{outline:3px solid #edac3e;outline-offset:3px}a{color:var(--pine2)}.boot{text-align:center;padding:25vh 20px;color:var(--muted)}.shell{max-width:950px;margin:0 auto;padding:0 18px}.header{background:var(--pine);color:#fff;padding:18px 0 54px}.topbar{display:flex;justify-content:space-between;align-items:center;gap:12px}.brand{display:flex;align-items:center;gap:11px}.brandlogo{height:43px;width:43px;border-radius:14px;background:#dff1de;color:#164d3f;display:grid;place-items:center;font-size:24px;font-weight:800;box-shadow:0 5px 14px #0b332b50}.brandname{font-size:20px;font-weight:800;letter-spacing:-.6px;line-height:1.1}.brandsub{font-size:12px;color:#b5d0c8;letter-spacing:.5px;margin-top:3px}.headerlink{border:1px solid #ffffff4d;color:#fff;background:#ffffff12;border-radius:100px;padding:9px 13px;font-size:13px;font-weight:700}.hero{margin-top:34px}.eyebrow{font-size:12px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;color:#e2bd75}.hero h1{font-size:clamp(32px,7vw,49px);line-height:1.05;letter-spacing:-1.5px;margin:8px 0 10px;font-weight:850}.hero p{color:#d4e5de;font-size:14px;line-height:1.5;margin:0;max-width:570px}.main{margin-top:-28px;position:relative}.days{display:flex;gap:8px;overflow-x:auto;padding:2px 0 10px;scrollbar-width:none}.days::-webkit-scrollbar{display:none}.day{border:1px solid #e0e8df;background:#fff;border-radius:15px;min-width:75px;min-height:73px;display:flex;flex-direction:column;gap:4px;align-items:center;justify-content:center;color:#536d66;font-weight:800;transition:transform .12s}.day b{font-size:16px}.day span{font-size:11px;font-weight:700}.day.active{background:#f4dca9;border-color:#ebc377;color:#173c36;box-shadow:0 5px 15px #684d0c1a}.day.today::after{content:"";height:4px;width:4px;border-radius:50%;background:currentColor}.sectionhead{display:flex;align-items:end;justify-content:space-between;gap:12px;margin:26px 0 12px}.sectionhead h2{font-size:23px;letter-spacing:-.6px;margin:0}.sectionhead p{font-size:13px;color:var(--muted);margin:5px 0 0}.textbutton{border:0;background:transparent;color:var(--pine2);font-size:13px;font-weight:750;padding:8px}.meals{display:grid;gap:12px}.meal{border:1px solid #e4ebe3;border-radius:20px;background:#fff;box-shadow:0 4px 22px #16372c08;overflow:hidden}.meal-header{padding:18px 17px 11px;display:flex;align-items:flex-start;gap:12px}.meal-emoji{width:46px;height:46px;border-radius:14px;background:#edf2e9;display:grid;place-items:center;font-size:22px;flex-shrink:0}.meal-kicker{font-size:12px;color:#789087;font-weight:750;margin:1px 0 4px}.meal-title{font-size:19px;font-weight:800;letter-spacing:-.45px;margin:0}.meal-summary{font-size:13px;color:var(--muted);margin:5px 0 0}.meal-body{padding:2px 17px 14px}.ingredients{background:#f5f8f3;border:1px solid #edf0e9;border-radius:12px;padding:8px 11px;margin:8px 0 13px}.itemline{display:flex;justify-content:space-between;gap:12px;padding:6px 0;align-items:baseline;font-size:14px}.itemline+.itemline{border-top:1px dashed #e4e9e1}.amount{white-space:nowrap;font-weight:800;color:#164b42;font-variant-numeric:tabular-nums}.choice{margin:13px 0}.choice label{display:block;font-size:13px;font-weight:850;margin:0 0 8px}.choice select{width:100%;border:1.5px solid #d3e1d6;border-radius:13px;min-height:48px;padding:10px 36px 10px 12px;background:#fff;color:#1c4841;font-size:15px;font-weight:700;white-space:normal}.micro{font-size:12px;line-height:1.5;color:#6f817c;margin:7px 2px 0}.note{background:#fff9ed;border-left:3px solid #edc77c;border-radius:0 9px 9px 0;margin:7px 0;padding:9px 10px;color:#5d533c;font-size:13px;line-height:1.5}.meal-footer{border-top:1px solid var(--line);padding:10px 17px;display:flex;align-items:center;justify-content:space-between;gap:12px}.done-btn{border:1px solid #cadad0;background:#f4f8f4;color:var(--pine);padding:9px 14px;border-radius:11px;font-size:13px;font-weight:800;display:inline-flex;gap:7px;align-items:center}.done-btn.isdone{background:#dcf0df;border-color:#b1d0b9}.recipe-details{padding:0 17px 12px;color:#4d6660}.recipe-details summary{cursor:pointer;font-size:13px;font-weight:700;padding:10px 0;list-style:none;display:flex;align-items:center;gap:6px}.recipe-details summary:after{content:'⌄';margin-left:auto}.recipe-details[open] summary:after{content:'⌃'}.recipe-details ol{padding-left:19px;margin:5px 0 5px;font-size:13px;line-height:1.65}.recipe-details li{margin:5px 0}.tipbar{display:flex;gap:10px;align-items:flex-start;padding:12px 14px;background:#e9f3ed;border-radius:15px;color:#295b4e;font-size:13px;line-height:1.5;margin:18px 0}.nav{position:fixed;bottom:0;left:0;right:0;z-index:30;background:#fffdfc;box-shadow:0 -4px 25px #173d2f15;border-top:1px solid var(--line);padding:10px 9px calc(10px + env(safe-area-inset-bottom));display:flex;justify-content:center;gap:6px}.nav button{flex:1;max-width:170px;border:0;background:transparent;color:#80908d;border-radius:13px;padding:9px 4px;display:flex;flex-direction:column;align-items:center;gap:3px;font-size:11px;font-weight:800}.nav button.active{color:var(--pine);background:#e6f0e8}.nav .navicon{font-size:21px;line-height:1.2}.panel{background:#fff;border:1px solid var(--line);border-radius:20px;padding:18px;margin:13px 0;box-shadow:0 4px 22px #16372c08}.panel h3{font-size:17px;letter-spacing:-.3px;margin:0 0 9px}.panel p,.panel li{line-height:1.6;color:#516c65;font-size:14px}.panel ul{margin:10px 0;padding-left:20px}.panel li{margin:7px 0}.week-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px}.week-card{background:#fff;border:1px solid var(--line);border-radius:17px;padding:17px;text-align:left;color:inherit;box-shadow:0 4px 12px #16372c05;width:100%}.week-card .week-day{font-size:17px;font-weight:850;margin-bottom:12px}.weekline{font-size:13px;line-height:1.5;padding:7px 0;border-bottom:1px solid #edf0ea;display:flex;gap:8px}.weekline:last-child{border:0}.weekline span{color:#718880;min-width:53px}.weekdaytag{float:right;background:#e9f3eb;color:#2f705d;font-size:11px;border-radius:8px;padding:5px 7px}.scope{display:flex;gap:8px;margin:12px 0}.scope button{border:1px solid #d9e6db;background:#fff;padding:11px 16px;border-radius:12px;color:#385c53;font-size:13px;font-weight:800}.scope button.active{background:var(--pine);border-color:var(--pine);color:#fff}.shoprow{display:flex;align-items:center;gap:11px;padding:10px 3px;border-bottom:1px solid #eaf0e9}.shoprow:last-child{border:0}.shoprow input{height:20px;width:20px;accent-color:var(--pine);flex-shrink:0}.shoprow.checked .shoptext{text-decoration:line-through;color:#8a9894}.shoptext{flex:1;font-size:14px}.shopqty{font-size:14px;font-weight:800;font-variant-numeric:tabular-nums;color:var(--pine)}.actions{display:flex;gap:8px;flex-wrap:wrap;margin:13px 0}.action{border:1px solid #cddfd1;background:#fff;color:var(--pine);border-radius:12px;padding:11px 14px;font-weight:800;font-size:13px}.action.primary{background:var(--pine);color:#fff;border-color:var(--pine)}.extraform{display:flex;gap:8px}.extraform input{min-width:0;flex:1;border:1px solid #d0ddd4;border-radius:11px;padding:11px 12px;font-size:15px}.extraform button{border:0;background:var(--pine);color:white;border-radius:11px;padding:10px 13px;font-weight:800}.extras{display:flex;flex-wrap:wrap;gap:8px}.extra{border-radius:100px;background:#e6f0e8;font-size:13px;padding:8px 11px;color:#32584e}.extra button{border:0;background:transparent;margin-left:6px;color:#32584e;font-weight:800}.disclaimer{font-size:12px;line-height:1.55;color:#687e75;padding:10px 0}.guidegrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px}.equiv-table{width:100%;border-collapse:collapse}.equiv-table th,.equiv-table td{text-align:left;vertical-align:top;border-bottom:1px solid #ecf0ea;padding:11px 7px;font-size:13px}.equiv-table th{font-size:12px;color:#607a70}.warning{background:#fff6e6;border:1px solid #f0dcae;border-radius:14px;padding:12px 14px;font-size:13px;line-height:1.5;color:#6d5631;margin:13px 0}.empty{text-align:center;padding:26px 10px;color:var(--muted)}.subhead{font-size:13px;font-weight:800;color:#477363;margin:21px 0 9px;text-transform:uppercase;letter-spacing:.6px}.footer{text-align:center;font-size:11px;color:#8a9a94;max-width:750px;margin:36px auto 10px;line-height:1.6}.installbox{border:1px solid #d6e7da;background:#eaf4ea;border-radius:14px;padding:15px;font-size:14px;line-height:1.6;color:#245449;margin:16px 0}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}@media(min-width:760px){.meals{grid-template-columns:repeat(2,1fr);align-items:start}.meal:nth-child(3){grid-column:span 2}.header{padding-bottom:60px}.main{margin-top:-29px}.nav{left:50%;right:auto;transform:translateX(-50%);width:590px;border:1px solid #e1e9df;border-bottom:0;border-radius:18px 18px 0 0}}@media print{body{padding:0;background:white}.header,.nav,.days,.actions,.extraform,.installbox,.done-btn,.recipe-details,.topbar .headerlink,.sectionhead .textbutton{display:none!important}.main{margin:0}.panel,.meal{box-shadow:none;break-inside:avoid}.shell{max-width:none}body *{color:#000!important}}
+
+</style>
+  <title>Piatto Chiaro — La mia settimana</title>
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" type="image/svg+xml" href="./icons/icon.svg">
+  <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
+</head>
+<body>
+  <div id="app"><div class="boot">Apro il tuo menù…</div></div>
+<script>
+/* Trascrizione operativa dal piano alimentare (13/11/2026), senza dati personali. */
+const I=(name,amount,unit='g',detail='')=>({name,amount,unit,detail});
+const O=(label,items,note='')=>({label,items,note});
+const G=(id,label,options,description='')=>({id,label,options,description});
+const M=(id,title,subtitle,fixed=[],groups=[],notes=[],steps=[])=>({id,title,subtitle,fixed,groups,notes,steps});
+const oil=(q=10)=>I('Olio extravergine d’oliva',q);
+const pasta=(q=90)=>I('Pasta di semola (secca)',q);
+const rice=(q=90)=>I('Riso basmati (crudo)',q);
+const grana=(q=10)=>I('Grana grattugiato',q);
+const iceberg=(q=100)=>I('Lattuga iceberg',q);
+const breadOpts=[O('Pane bianco senza sesamo',[I('Pane bianco senza sesamo',70)]), O('Pane di semola a lievitazione naturale',[I('Pane di semola a lievitazione naturale',70)]),O('Patate bollite (max 2 volte/settimana)',[I('Patate (peso crudo)',170),oil(5)],'Sostituiscono il pane; massimo due volte alla settimana. Non usarle con carne o calamari panati.')];
+const bread=()=>G('bread','Pane oppure patate',breadOpts);
+const veg=()=>G('vegetable','Contorno: scegli una possibilità',[
+ O('Zucchine al forno',[I('Zucchine',150),oil(10)]),
+ O('Zucca gialla al forno',[I('Zucca gialla',150),oil(10)]),
+ O('Melanzane al forno',[I('Melanzane',150),oil(10)]),
+ O('Peperoni al forno',[I('Peperoni',150),oil(10)]),
+ O('Lattuga e pomodorini',[iceberg(),I('Pomodorini (indicati come senza nichel)',150),oil(10)],'Scelta da consumare con minore frequenza secondo il piano.'),
+ O('Scarola bollita',[I('Scarola',150),oil(10)],'Scelta da consumare con minore frequenza secondo il piano.')
+ ],'Verdure al forno da alternare; l’olio si aggiunge dopo la cottura.');
+const breakfast=day=>M('breakfast','Colazione','Latte macchiato e accompagnamento',[],[
+ G('milk','Latte senza lattosio',[
+  O('Zymil 1% di grassi',[I('Latte Zymil senza lattosio 1%',140),I('Caffè',30)]),
+  O('Accadì 1% di grassi',[I('Latte Accadì senza lattosio 1%',140),I('Caffè',30)])
+ ],'Caffè senza zucchero. Possibile altro latte senza lattosio con circa 1% di grassi.'),
+ G('breakfastCarb','Da accompagnare',[
+  O('3 fette biscottate',[I('Fette biscottate normali',27)],'Tre fette da circa 9 g ciascuna.'),
+  O('Pane bianco senza sesamo',[I('Pane bianco senza sesamo',40)]),
+  O('Pane di semola a lievitazione naturale',[I('Pane di semola a lievitazione naturale',40)]),
+  ...(day===6 ? [O('Tortina classica Tomarchio',[I('Tortina classica Tomarchio',1,'pz')],'Solo domenica; il piano non ne specifica i grammi.'),O('Cornetto piccolo alla crema bianca',[I('Cornetto piccolo alla crema bianca',1,'pz')],'Solo domenica; il piano non ne specifica i grammi.')] : [])
+ ])
+ ],['Latte e caffè tiepidi, non troppo caldi.'],['Macchiare il latte con una tazzina di caffè (30 g). Non aggiungere zucchero.']);
+const snack=(id)=>M(id,id==='morning'?'Spuntino di metà mattina':'Merenda pomeridiana','Frutta fresca',[
+ I('Frutta fresca senza buccia',150)
+ ],[],['Preferire mela, melone, pesca, banana (massimo due volte a settimana) e agrumi se tollerati. Frutta matura; evitare avocado, succhi e spremute.','150 g senza buccia corrispondono indicativamente a 200–220 g con buccia: verificare di volta in volta.']);
+const lunchPastaGroup=(id, options, label='Piatto principale')=>G(id,label,options,'Se indicato nelle note, si può usare riso basmati a pari peso della pasta.');
+const salad=()=>[iceberg(),oil(10)];
+const dinner=(subtitle,protein,fixed=[],notes=[],steps=[])=>M('dinner','Cena',subtitle,fixed,[protein,veg(),bread()],['Il pane è sempre 70 g, oppure le patate da 170 g + 5 g di olio massimo due volte a settimana.',...notes],['Pesare a crudo le parti edibili. Aggiungere l’olio extravergine dopo la cottura.',...steps]);
+const days=[
+ {name:'Lunedì',short:'Lun',number:44,
+ lunch:M('lunch','Pranzo','Pasta con zucchine',[],[
+  G('main','Piatto principale',[
+   O('Pasta con zucchine',[pasta(90),I('Zucchine',150),oil(20),grana()]),
+   O('Riso basmati con zucchine',[rice(90),I('Zucchine',150),oil(20),grana()],'Sostituzione pasta/riso espressamente prevista nelle note.')
+  ])],['Niente pane e niente insalata.'],['Bollire le zucchine; unire alla pasta o al riso. Aggiungere olio a tavola, dopo la cottura.']),
+ dinner:dinner('Pollo o tacchino con verdure',G('protein','Carne: scegli una possibilità',[
+   O('Petto di pollo',[I('Petto di pollo',130),oil(10)]),O('Fesa di tacchino fresca',[I('Fesa di tacchino fresca',130),oil(10)])
+ ]),[],['Carne al piatto o al forno. Possibile panatura solo con pangrattato: in tal caso ridurre il pane di 30 g ed evitare le patate.'])},
+ {name:'Martedì',short:'Mar',number:45,
+ lunch:M('lunch','Pranzo','Pasta e tonno, con insalata',salad(),[
+  G('main','Piatto principale',[
+   O('Pasta con tonno',[pasta(90),I('Tonno sott’olio sgocciolato (vaso di vetro)',50)]),
+   O('Riso basmati con tonno',[rice(90),I('Tonno sott’olio sgocciolato (vaso di vetro)',50)],'Sostituzione pasta/riso prevista nelle note.')
+  ])],['Insalata iceberg 100 g + 10 g di olio, preferibilmente prima della pasta. Niente pane.'],['Cuocere pasta o riso. Aggiungere il tonno sgocciolato dopo la cottura.']),
+ dinner:dinner('Due uova con verdure',G('protein','Piatto principale',[
+  O('2 uova intere',[I('Uova',2,'pz')],'Le uova sono circa 120 g totali; non occorre pesarle.')
+ ]),[],['Le uova vanno cotte a piacere, ma non fritte.','Per la cottura delle uova seguire le precauzioni sulle pentole riportate nel piano.'])},
+ {name:'Mercoledì',short:'Mer',number:46,
+ lunch:M('lunch','Pranzo','Pasta e piselli',[],[
+  G('main','Piatto principale',[
+   O('Pasta e piselli',[pasta(90),I('Piselli freschi o surgelati (crudi)',60),oil(20),grana()]),
+   O('Riso basmati e piselli',[rice(90),I('Piselli freschi o surgelati (crudi)',60),oil(20),grana()],'Sostituzione pasta/riso prevista nelle note.')
+  ])],['Niente pane e niente insalata.'],['Bollire i piselli. Aggiungere olio extravergine dopo la cottura.']),
+ dinner:dinner('Bovino con verdure',G('protein','Carne: scegli un taglio',[
+  O('Fesa di bovino',[I('Fesa di bovino',130),oil(10)]),O('Noce di bovino',[I('Noce di bovino',130),oil(10)]),O('Girello di bovino',[I('Girello di bovino',130),oil(10)])
+ ]),[],['Possibili fettine o polpette al forno (solo con aglio, se tollerato). Possibile panatura con solo pangrattato: pane ridotto di 30 g e niente patate.'])},
+ {name:'Giovedì',short:'Gio',number:47,
+ lunch:M('lunch','Pranzo','Pasta al pomodoro con insalata',salad(),[
+  G('main','Piatto principale',[
+   O('Pasta con passata',[pasta(90),I('Passata di pomodoro (indicata come senza nichel)',90),oil(10),grana()]),
+   O('Riso basmati con passata',[rice(90),I('Passata di pomodoro (indicata come senza nichel)',90),oil(10),grana()],'Sostituzione pasta/riso prevista nelle note.')
+  ])],['Insalata iceberg 100 g + 10 g di olio, preferibilmente prima del primo. Niente pane.'],['Cuocere la passata e condire pasta o riso. Aggiungere l’olio a tavola dopo la cottura.']),
+ dinner:dinner('Pesce con verdure',G('protein','Pesce: scegli una possibilità',[
+  O('Spigola selvatica',[I('Spigola selvatica (parte edibile)',160),oil(10)]),
+  O('Orata selvatica',[I('Orata selvatica (parte edibile)',140),oil(10)]),
+  O('Pesce spada',[I('Pesce spada',130),oil(10)]),
+  O('Spigola di allevamento',[I('Spigola di allevamento (parte edibile)',150)],'Non aggiungere olio alla porzione di pesce.'),
+  O('Orata di allevamento',[I('Orata di allevamento (parte edibile)',140)],'Non aggiungere olio alla porzione di pesce.'),
+  O('Tonno sott’olio sgocciolato',[I('Tonno sott’olio sgocciolato (vaso di vetro)',100)],'Il piano non prevede olio aggiuntivo sul tonno.'),
+  O('Calamaro fresco (max 2 volte al mese)',[I('Calamaro fresco (parte edibile)',210),oil(10)],'Massimo due volte al mese. Se panato con pangrattato: pane ridotto di 30 g e niente patate.')
+ ]),[],['Il peso del pesce è netto delle parti non commestibili.','Per spigola e orata di allevamento il piano chiede di non aggiungere olio al pesce e di scartare il grasso di cottura.'])},
+ {name:'Venerdì',short:'Ven',number:48,
+ lunch:M('lunch','Pranzo','Pasta e legumi',[],[
+  G('main','Piatto principale',[
+   O('Pasta e ceci (prima scelta)',[pasta(60),I('Ceci secchi (crudi)',50),oil(20)]),
+   O('Pasta e fagioli (meno frequentemente)',[pasta(60),I('Fagioli secchi (crudi)',50),oil(20)]),
+   O('Pasta e lenticchie (meno frequentemente)',[pasta(60),I('Lenticchie secche (crude)',50),oil(20)]),
+   O('Riso basmati e ceci',[rice(60),I('Ceci secchi (crudi)',50),oil(20)],'Sostituzione pasta/riso prevista nelle note.'),
+   O('Riso basmati e fagioli',[rice(60),I('Fagioli secchi (crudi)',50),oil(20)],'Alternativa meno frequente; sostituzione pasta/riso prevista nelle note.'),
+   O('Riso basmati e lenticchie',[rice(60),I('Lenticchie secche (crude)',50),oil(20)],'Alternativa meno frequente; sostituzione pasta/riso prevista nelle note.')
+  ])],['Niente pane e niente insalata.','Legumi: 50 g secchi, non già cotti.'],['Cuocere i legumi. Aggiungere l’olio dopo la cottura.']),
+ dinner:dinner('Formaggio o ricotta con verdure',G('protein','Formaggio: scegli una possibilità',[
+  O('Galbanino senza lattosio',[I('Galbanino senza lattosio',70)]),
+  O('Pecorino fresco',[I('Pecorino fresco',70)]),
+  O('Grana, in pezzo',[I('Grana (in pezzo)',60)]),
+  O('Ricotta vaccina senza lattosio',[I('Ricotta vaccina senza lattosio',100)])
+ ]))},
+ {name:'Sabato',short:'Sab',number:49,
+ lunch:M('lunch','Pranzo','Pasta in bianco o al pesto',salad(),[
+  G('main','Piatto principale',[
+   O('Pasta in bianco',[pasta(90),oil(10),grana()]),
+   O('Pasta al pesto di zucchine o peperoni',[pasta(90),I('Pesto di zucchine o peperoni senza pinoli',30)],'Pesto preparato solo con verdure, olio EVO e grana, senza pinoli.'),
+   O('Riso basmati in bianco',[rice(90),oil(10),grana()],'Sostituzione pasta/riso prevista nelle note.'),
+   O('Riso basmati al pesto',[rice(90),I('Pesto di zucchine o peperoni senza pinoli',30)],'Sostituzione pasta/riso prevista nelle note.')
+  ])],['Insalata iceberg 100 g + 10 g di olio, preferibilmente prima del primo. Niente pane.'],['Nel caso del pesto, condire la pasta appena scolata e allungare se necessario con poca acqua di cottura.']),
+ dinner:dinner('Lonza di maiale con verdure',G('protein','Piatto principale',[
+  O('Lonza di maiale',[I('Lonza di maiale',130),oil(10)])
+ ]),[],['Possibile panatura con solo pangrattato: pane ridotto di 30 g e niente patate.'])},
+ {name:'Domenica',short:'Dom',number:50,
+ lunch:M('lunch','Pranzo','Pranzo libero, secondo le note',[],[
+ G('main','Esempi esplicitamente previsti',[
+  O('Primo con proteine animali + insalata',[], 'Per esempio pasta al ragù o lasagne al forno con passata indicata come senza nichel. Le quantità non sono specificate per il pranzo libero: non inserite nella lista della spesa.'),
+  O('Secondo di carne o pesce + contorno + pane',[], 'Carne o pesce tra quelli del piano, con insalata o verdure e pane da 70 g. La quantità della carne/pesce non è specificata per il pranzo libero: consultare gli altri giorni; non inserita nella lista della spesa.')
+ ])],['Il piano indica di controllare le porzioni e aggiungere un contorno vegetale.','Se scegli un primo, niente pane. Se scegli un secondo, il pane è 70 g.','Pasta fresca: 110–120 g sono indicati come equivalenti a 90 g di pasta secca.','Per la spesa inserire manualmente gli ingredienti del pranzo libero.']),
+ dinner:M('dinner','Cena','Verdure e pane (come nel documento)',[],[veg(),bread()],['Il documento non indica una fonte proteica specifica per la cena della domenica. Non ne è stata aggiunta una autonomamente.'],['Verdure e olio secondo le modalità del piano.'])}
+];
+const sharedMeals=(d)=>({breakfast:breakfast(d),morning:snack('morning'),lunch:days[d].lunch,afternoon:snack('afternoon'),dinner:days[d].dinner});
+const mealNames={breakfast:'Colazione',morning:'Spuntino',lunch:'Pranzo',afternoon:'Merenda',dinner:'Cena'};
+const mealIcons={breakfast:'☕',morning:'🍎',lunch:'🍽',afternoon:'🍑',dinner:'🌙'};
+const guide={
+ cooking:['Pesare tutti gli alimenti a crudo, dopo aver eliminato le parti non commestibili. Per il pesce il peso è netto, cioè senza scarti.','Aggiungere sempre l’olio extravergine a tavola, dopo la cottura.','Per la preparazione il piano preferisce vetro oppure acciaio siglato 18/c. Con acciaio 18/10 non lasciare gli alimenti nelle pentole dopo la cottura; trasferirli subito.','Per carne e pesce usare pirofila di vetro o teglia indicata nel piano; per altri materiali usare carta forno.','In caso di panatura della carne con solo pangrattato (o del calamaro secondo le note), ridurre il pane della cena da 70 g a 40 g ed evitare la sostituzione con patate.'],
+ limits:['Pane della cena: 70 g, oppure patate crude 170 g + 5 g d’olio, massimo 2 volte a settimana.','Banana: massimo 2 volte alla settimana.','Uva, loti e fichi: nel complesso massimo 1 volta alla settimana.','Calamaro: massimo 2 volte al mese.','Frutta secca: da evitare secondo queste note. Evitare avocado, succhi e spremute di frutta.','Per la cena di giovedì, pesce di allevamento senza olio aggiunto al pesce.','Sale: le note raccomandano un consumo moderato (meno di 5 g/giorno, preferibilmente massimo 3 g).','Succo di limone e aceto di mele in piccole dosi e solo se ben tollerati; evitare caramelle e gomme da masticare.'],
+ habits:['Acqua naturale non effervescente, a piccoli sorsi nel corso della giornata.','Evitare alcolici, bevande gassate zuccherine e cibi o bevande troppo caldi o troppo freddi. Limitare il caffè.','Non coricarsi subito dopo i pasti. Seguire le tempistiche indicate dal professionista per camminare dopo mangiato.','Il piano indica, per camminare dopo i pasti: attendere 2–2,5 ore dopo colazione, 1–1,5 ore dopo spuntini, 3–3,5 ore dopo pranzo; è citata anche la camminata al mattino a digiuno. Seguire il parere del medico.','Se le condizioni lo permettono e il medico è favorevole, le note propongono camminata lenta-moderata 45–60 minuti per 2–3 volte a settimana.','Le note consentono di sostituire l’intera dieta di un giorno con quella di un altro. Non autorizzano automaticamente a scambiare singoli piatti senza rispettare il resto delle indicazioni.']
+};
+const equivalences=[['Olio EVO','10 g','1 cucchiaio da minestra colmo'],['Olio EVO','5 g','1 cucchiaino da tè colmo'],['Olio EVO','15 g','1 cucchiaio + 1 cucchiaino'],['Grana grattugiato','10 g','1 cucchiaio da minestra colmo'],['Grana grattugiato','5 g','1 cucchiaino da tè colmo'],['Fette biscottate','9 g','1 fetta'],['Caffè','30 g','1 tazzina'],['Caffè','15 g','mezza tazzina'],['Uovo intero','60 g','1 uovo medio'],['Pasta secca','90 g','110–120 g di pasta fresca (per il pranzo libero domenicale)'],['Frutta senza buccia','150 g','circa 200–220 g con buccia: verificare']];
+const suggestions=[
+ {name:'Pasta, merluzzo e zucchine',ingredients:'80 g pasta · 130 g merluzzo · 150–200 g zucchine · 10 g olio EVO',note:'Idea discussa in chat, non prevista dal piano originale.'},
+ {name:'Riso basmati e tacchino',ingredients:'80 g riso · 120 g tacchino · 150 g zucchine · 10 g olio EVO',note:'Idea discussa in chat, non prevista dal piano originale.'},
+ {name:'Pasta, pollo e zucca',ingredients:'80 g pasta · 110 g pollo · 150 g zucca · 10 g olio EVO',note:'Idea discussa in chat, non prevista dal piano originale.'}
+];
+
+</script>
+<script>
+(() => {
+  'use strict';
+  const KEY='piattochiaro-v1';
+  const localDay=()=>{const n=new Date().getDay();return (n+6)%7;};
+  const defaults={view:'today',day:localDay(),selections:{},completed:{},shoppingChecks:{},shoppingScope:'week',extras:[],installVisible:false};
+  let state={...defaults};
+  try {const stored=JSON.parse(localStorage.getItem(KEY)||'null');if(stored&&typeof stored==='object'){state={...defaults,...stored,selections:stored.selections||{},completed:stored.completed||{},shoppingChecks:stored.shoppingChecks||{},extras:Array.isArray(stored.extras)?stored.extras:[]}}}catch(_){/* offline/storage disabled */}
+  const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(state))}catch(_){}};
+  const $=id=>document.getElementById(id);
+  const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const fmt=n=>new Intl.NumberFormat('it-IT',{maximumFractionDigits:1}).format(n);
+  const itemLabel=i=>`${fmt(i.amount)} ${i.unit}`;
+  const selected=(d,m,g)=>{const idx=Number(state.selections[`${d}.${m}.${g.id}`]);return Number.isInteger(idx)&&idx>=0&&idx<g.options.length?idx:0};
+  const getOption=(d,m,g)=>g.options[selected(d,m,g)];
+  const meals=d=>sharedMeals(d);
+  const mealItems=(d,m)=>{const meal=meals(d)[m];return [...meal.fixed,...meal.groups.flatMap(g=>getOption(d,m,g).items)];};
+  const todayDate=()=>{const d=new Date();d.setHours(12,0,0,0);return d};
+  const monday=()=>{const x=todayDate();x.setDate(x.getDate()-localDay());return x};
+  const dayDate=d=>{const x=monday();x.setDate(x.getDate()+d);return x};
+  const isoLocal=d=>[d.getFullYear(),String(d.getMonth()+1).padStart(2,'0'),String(d.getDate()).padStart(2,'0')].join('-');
+  const doneKey=(d,m)=>`${isoLocal(dayDate(d))}.${m}`;
+  const isDone=(d,m)=>!!state.completed[doneKey(d,m)];
+  const numDone=d=>['breakfast','morning','lunch','afternoon','dinner'].filter(m=>isDone(d,m)).length;
+  const dateLabel=d=>new Intl.DateTimeFormat('it-IT',{day:'numeric',month:'long'}).format(dayDate(d));
+  const dateLong=d=>new Intl.DateTimeFormat('it-IT',{weekday:'long',day:'numeric',month:'long'}).format(dayDate(d));
+  const grams=items=>items.map(i=>`<div class="itemline"><span>${esc(i.name)}</span><span class="amount">${esc(itemLabel(i))}</span></div>`).join('');
+  const ingredients=items=>items.length?`<div class="ingredients">${grams(items)}</div>`:'';
+  const choiceHTML=(d,m,g)=>{const index=selected(d,m,g),opt=g.options[index];return `<div class="choice"><label for="sel-${d}-${m}-${g.id}">${esc(g.label)}</label><select id="sel-${d}-${m}-${g.id}" data-choice="1" data-day="${d}" data-meal="${m}" data-group="${esc(g.id)}">${g.options.map((o,i)=>`<option value="${i}"${i===index?' selected':''}>${esc(o.label)}</option>`).join('')}</select>${ingredients(opt.items)}${opt.note?`<div class="note">${esc(opt.note)}</div>`:''}${g.description?`<p class="micro">${esc(g.description)}</p>`:''}</div>`};
+  const mealCard=(d,m)=>{const meal=meals(d)[m],done=isDone(d,m);return `<article class="meal" id="meal-${m}">
+    <div class="meal-header"><span class="meal-emoji" aria-hidden="true">${mealIcons[m]}</span><div><div class="meal-kicker">${esc(mealNames[m])}</div><h3 class="meal-title">${esc(meal.subtitle)}</h3></div></div>
+    <div class="meal-body">${ingredients(meal.fixed)}${meal.groups.map(g=>choiceHTML(d,m,g)).join('')}${meal.notes.map(n=>`<div class="note">${esc(n)}</div>`).join('')}</div>
+    ${meal.steps.length?`<details class="recipe-details"><summary>Preparazione e indicazioni</summary><ol>${meal.steps.map(s=>`<li>${esc(s)}</li>`).join('')}</ol></details>`:''}
+    <div class="meal-footer"><span class="micro">${done?'Pasto segnato come consumato':'Segna il pasto dopo aver mangiato'}</span><button class="done-btn ${done?'isdone':''}" data-done="${m}" data-day="${d}" aria-pressed="${done}">${done?'✓ Fatto':'✓ Segna fatto'}</button></div>
+    </article>`};
+  const daySelector=()=>`<div class="days" role="group" aria-label="Seleziona il giorno della settimana">${days.map((x,i)=>`<button class="day ${i===state.day?'active':''} ${i===localDay()?'today':''}" data-day-select="${i}" aria-pressed="${i===state.day}"><span>${x.short}</span><b>${dayDate(i).getDate()}</b></button>`).join('')}</div>`;
+  const todayView=()=>`<section>${daySelector()}<div class="sectionhead"><div><h2>Il menù di ${esc(days[state.day].name.toLowerCase())}</h2><p>${esc(dateLabel(state.day))} · ${numDone(state.day)} pasti segnati su 5</p></div><button class="textbutton" data-view="week">Vedi settimana →</button></div>
+   <div class="tipbar"><span aria-hidden="true">⚖️</span><span><b>Quantità a crudo.</b> Tutti i pesi sono prima della cottura, eliminando gli scarti. L'olio va aggiunto dopo la cottura.</span></div>
+   <div class="meals">${Object.keys(mealNames).map(m=>mealCard(state.day,m)).join('')}</div>
+   <div class="tipbar"><span aria-hidden="true">💡</span><span>La scheda riporta le alternative previste dal piano originale. Per cambiare <b>l'intera giornata</b> puoi consultare gli altri giorni; per modifiche autonome al piano, confrontati con il professionista.</span></div></section>`;
+  const weekView=()=>`<section><div class="sectionhead"><div><h2>Tutta la settimana</h2><p>Scegli un giorno per leggere quantità e alternative.</p></div></div><div class="week-grid">${days.map((d,i)=>{const mm=meals(i);return `<button class="week-card" data-day-select="${i}"><div class="week-day">${esc(d.name)}<span class="weekdaytag">${numDone(i)}/5 pasti</span></div><div class="weekline"><span>Pranzo</span><strong>${esc(mm.lunch.subtitle)}</strong></div><div class="weekline"><span>Cena</span><strong>${esc(mm.dinner.subtitle)}</strong></div></button>`}).join('')}</div><div class="panel"><h3>Come funzionano gli scambi?</h3><p>Nelle note del piano è consentito sostituire <b>l'intera dieta di un giorno</b> con quella di un altro (per esempio lunedì e giovedì). Le sostituzioni di ingredienti all'interno del pasto sono mostrate nei menù dettagliati.</p></div></section>`;
+  const allSelectedPotatoes=()=>days.reduce((n,_,d)=>n+(selected(d,'dinner',meals(d).dinner.groups.find(g=>g.id==='bread'))===2?1:0),0);
+  const shopDays=()=>state.shoppingScope==='day'?[state.day]:[0,1,2,3,4,5,6];
+  const shopItems=()=>{const map=new Map();for(const d of shopDays())for(const mealId of Object.keys(mealNames))for(const it of mealItems(d,mealId)){const k=`${it.name}|${it.unit}`;if(map.has(k)){map.get(k).amount+=it.amount}else{map.set(k,{...it})}}return [...map.entries()].map(([key,it])=>({...it,key})).sort((a,b)=>a.name.localeCompare(b.name,'it'))};
+  const shopView=()=>{const items=shopItems(),checked=items.filter(it=>state.shoppingChecks[it.key]).length;return `<section><div class="sectionhead"><div><h2>Lista della spesa</h2><p>Si aggiorna scegliendo le alternative dei menù.</p></div></div>
+    <div class="scope"><button data-scope="day" class="${state.shoppingScope==='day'?'active':''}">Solo ${esc(days[state.day].name)}</button><button data-scope="week" class="${state.shoppingScope==='week'?'active':''}">Tutta la settimana</button></div>
+    <div class="panel"><div class="sectionhead" style="margin:0 0 8px"><div><h3>Da acquistare</h3><p>${checked} di ${items.length} voci selezionate</p></div></div>
+    ${items.map(it=>`<label class="shoprow ${state.shoppingChecks[it.key]?'checked':''}"><input type="checkbox" data-shop="${encodeURIComponent(it.key)}" ${state.shoppingChecks[it.key]?'checked':''}><span class="shoptext">${esc(it.name)}</span><span class="shopqty">${esc(itemLabel(it))}</span></label>`).join('')||'<div class="empty">Non ci sono ingredienti.</div>'}
+    <div class="actions"><button class="action primary" data-print="1">🖨 Stampa / salva PDF</button><button class="action" data-copy="1">📋 Copia la lista</button><button class="action" data-uncheck="1">Azzera spunte</button></div>
+    </div>${shopDays().includes(6)?'<div class="warning">⚠️ Il pranzo libero della domenica non ha quantità definite per tutti gli ingredienti. La lista non può calcolarlo automaticamente: aggiungi gli acquisti necessari qui sotto.</div>':''}
+    ${allSelectedPotatoes()>2?'<div class="warning">⚠️ Hai scelto le patate per più di due cene: il piano le limita a due volte a settimana.</div>':''}
+    <div class="panel"><h3>Altri acquisti</h3><p>Per il pranzo libero o altri prodotti da ricordare.</p><form class="extraform" id="extra-form"><input type="text" id="extra-input" placeholder="Es. ingredienti pranzo domenica" maxlength="110" aria-label="Aggiungi un prodotto"><button type="submit">Aggiungi</button></form><div class="extras" style="margin-top:12px">${state.extras.map((x,i)=>`<span class="extra">${esc(x)} <button data-remove-extra="${i}" aria-label="Rimuovi ${esc(x)}">×</button></span>`).join('')}</div></div></section>`};
+  const guideView=()=>`<section><div class="sectionhead"><div><h2>Guida pratica</h2><p>Pesi, ricette e note del piano originale.</p></div></div>
+    <div class="guidegrid"><div class="panel"><h3>⚖️ Pesi e cottura</h3><ul>${guide.cooking.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>
+    <div class="panel"><h3>🍐 Frequenze e limiti</h3><ul>${guide.limits.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>
+    <div class="panel"><h3>💧 Abitudini indicate</h3><ul>${guide.habits.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>
+    <div class="panel"><h3>☕ Caffè facoltativo</h3><p>Nel corso della giornata è previsto, se desiderato, un altro caffè da 30 g macchiato con 10 g di latte senza lattosio all'1% di grassi, senza zucchero. Non è conteggiato nella spesa perché facoltativo.</p></div></div>
+    <div class="panel"><h3>Equivalenze alimentari</h3><p>Valori trascritti dal documento «Pesi ed Equivalenze» e dalle note del piano.</p><table class="equiv-table"><thead><tr><th>Alimento</th><th>Peso</th><th>Equivalenza</th></tr></thead><tbody>${equivalences.map(r=>`<tr>${r.map(x=>`<td>${esc(x)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>
+    <div class="subhead">Sezione separata: idee non prescritte</div><div class="panel"><h3>💡 Piatti da discutere con il nutrizionista</h3><p>Queste idee erano state proposte nella conversazione e <b>non sono alternative autorizzate dal documento</b>. Non entrano automaticamente nella dieta né nella lista della spesa.</p>${suggestions.map(x=>`<div style="border-top:1px solid #e5ebe4;padding:12px 0"><strong>${esc(x.name)}</strong><p style="margin:5px 0">${esc(x.ingredients)}</p><p class="micro">${esc(x.note)}</p></div>`).join('')}</div>
+    <div class="panel"><h3>📲 Installa su iPhone</h3><p>Apri l'indirizzo pubblicato con Safari, tocca <b>Condividi</b> e scegli <b>Aggiungi alla schermata Home</b>. Dopo il primo caricamento, il menù può essere letto anche senza connessione.</p><p>Le scelte, i pasti segnati e la lista della spesa sono salvati solo nel browser del dispositivo. Non vengono caricati su server.</p></div>
+    </section>`;
+  const installBanner=()=>state.installVisible?`<div class="installbox"><b>Come installarla</b><br>Su iPhone: apri il sito in Safari → Condividi → Aggiungi alla schermata Home. Su Android: menu del browser → Installa app o Aggiungi a schermata Home.<br><button class="textbutton" data-install-close="1">Chiudi</button></div>`:'';
+  const nav=()=>`<nav class="nav" aria-label="Navigazione principale">${[['today','☀️','Oggi'],['week','🗓','Settimana'],['shop','🧺','Spesa'],['guide','📖','Guida']].map(([id,icon,name])=>`<button data-view="${id}" class="${state.view===id?'active':''}" aria-current="${state.view===id?'page':'false'}"><span class="navicon">${icon}</span><span>${name}</span></button>`).join('')}</nav>`;
+  const render=()=>{$('app').innerHTML=`<header class="header"><div class="shell"><div class="topbar"><div class="brand"><span class="brandlogo" aria-hidden="true">✳</span><div><div class="brandname">Piatto Chiaro</div><div class="brandsub">LA MIA DIETA · 7 GIORNI</div></div></div><button class="headerlink" data-install="1">＋ Installa</button></div><div class="hero"><div class="eyebrow">Il piano a portata di mano</div><h1>${state.view==='today'?esc(days[state.day].name):state.view==='week'?'La settimana':state.view==='shop'?'La spesa':'Tutto più semplice'}</h1><p>${state.view==='today'?esc(dateLong(state.day))+' · Cinque momenti della giornata, senza cercare nei PDF.':'Menù, quantità e alternative del piano originale, sempre a portata di mano.'}</p></div></div></header><main class="main shell">${installBanner()}${({today:todayView,week:weekView,shop:shopView,guide:guideView}[state.view]||todayView)()}<div class="footer">Trascrizione pratica della dieta consegnata dal nutrizionista (13/11/2026). In caso di differenze, prevalgono sempre i PDF originali e le indicazioni cliniche. Nessun dato personale o medico è incluso nell'app.</div></main>${nav()}`};
+  const notify=txt=>{const el=document.createElement('div');el.textContent=txt;el.style.cssText='position:fixed;z-index:99;bottom:100px;left:50%;transform:translateX(-50%);background:#173f38;color:white;padding:12px 17px;border-radius:12px;box-shadow:0 6px 26px #0003;max-width:90vw;text-align:center;font-size:13px';document.body.append(el);setTimeout(()=>el.remove(),2800)};
+  document.addEventListener('click',e=>{
+   const btn=e.target.closest('button');if(!btn)return;
+   if(btn.dataset.daySelect!==undefined){state.day=Number(btn.dataset.daySelect);state.view='today';save();render();window.scrollTo({top:0,behavior:'smooth'});return}
+   if(btn.dataset.view){state.view=btn.dataset.view;save();render();window.scrollTo({top:0,behavior:'smooth'});return}
+   if(btn.dataset.done){const k=doneKey(Number(btn.dataset.day),btn.dataset.done);state.completed[k]=!state.completed[k];save();render();return}
+   if(btn.dataset.scope){state.shoppingScope=btn.dataset.scope;save();render();return}
+   if(btn.dataset.install){state.installVisible=!state.installVisible;save();render();return}
+   if(btn.dataset.installClose){state.installVisible=false;save();render();return}
+   if(btn.dataset.print){window.print();return}
+   if(btn.dataset.uncheck){state.shoppingChecks={};save();render();return}
+   if(btn.dataset.removeExtra!==undefined){state.extras.splice(Number(btn.dataset.removeExtra),1);save();render();return}
+   if(btn.dataset.copy){const txt=`Lista della spesa - ${state.shoppingScope==='day'?days[state.day].name:'Settimana'}\n`+shopItems().map(it=>`${it.name}: ${itemLabel(it)}`).join('\n')+(state.extras.length?'\nAltri acquisti:\n'+state.extras.join('\n'):'');if(navigator.clipboard?.writeText){navigator.clipboard.writeText(txt).then(()=>notify('Lista copiata')).catch(()=>fallbackCopy(txt))}else fallbackCopy(txt);return}
+  });
+  function fallbackCopy(txt){const el=document.createElement('textarea');el.value=txt;el.style.position='fixed';document.body.append(el);el.select();const ok=document.execCommand('copy');el.remove();notify(ok?'Lista copiata':'Usa Stampa / salva PDF')}
+  document.addEventListener('change',e=>{
+   if(e.target.matches('[data-choice]')){const el=e.target,d=Number(el.dataset.day),m=el.dataset.meal,g=meals(d)[m].groups.find(x=>x.id===el.dataset.group);if(!g)return;const newIdx=Number(el.value);if(g.id==='bread'&&newIdx===2){const existing=allSelectedPotatoes();const had=selected(d,m,g)===2;if(existing>=2&&!had){notify('Massimo due cene con patate alla settimana');render();return}}state.selections[`${d}.${m}.${g.id}`]=newIdx;save();render();return}
+   if(e.target.matches('[data-shop]')){const key=decodeURIComponent(e.target.dataset.shop);state.shoppingChecks[key]=e.target.checked;save();render();return}
+  });
+  document.addEventListener('submit',e=>{if(e.target.id!=='extra-form')return;e.preventDefault();const val=($('extra-input')?.value||'').trim();if(val){state.extras.push(val.slice(0,110));save();render()}});
+  render();
+  if('serviceWorker' in navigator && window.location.protocol!=='file:'){window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));}
+})();
+
+</script>
+</body>
+</html>
