@@ -1,0 +1,20 @@
+{
+  "name": "Piatto Chiaro – La mia dieta",
+  "short_name": "Piatto Chiaro",
+  "description": "Piano alimentare settimanale, alternative, ricette e lista della spesa",
+  "id": "./",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f7f8f4",
+  "theme_color": "#134a42",
+  "lang": "it",
+  "icons": [
+    {
+      "src": "./icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
